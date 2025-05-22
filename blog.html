@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Teknologi & Inovasi</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-code"></i> TechBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="beranda.html"><i class="fas fa-home"></i> Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-blog"></i> Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html"><i class="fas fa-user"></i> Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container text-center">
+      <h1>Blog Teknologi & Inovasi</h1>
+      <p>Jelajahi artikel terbaru tentang teknologi, programming, dan inovasi digital</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Blog Posts Column -->
+      <div class="col-lg-8">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+          <img src="assets/images/ml.jpg" alt="AI dan Machine Learning" />
+          <div class="card-body">
+            <span class="category">Artificial Intelligence</span>
+            <h5><a href="artikel-ml.html">Masa Depan AI dan Machine Learning di Indonesia</a></h5>
+            <div class="blog-meta">
+              <i class="fas fa-user"></i> Admin TechBlog
+              <i class="fas fa-calendar ms-3"></i> 20 Mei 2025
+              <i class="fas fa-eye ms-3"></i> 1,245 views
+            </div>
+            <p>Artificial Intelligence dan Machine Learning telah menjadi teknologi yang mengubah berbagai aspek kehidupan...</p>
+            <a href="artikel-ml.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+          <img src="assets/images/framework-js.jpg" alt="Framework JS" />
+          <div class="card-body">
+            <span class="category">Web Development</span>
+            <h5><a href="artikel-js-framework.html">Framework JavaScript Terpopuler 2025</a></h5>
+            <div class="blog-meta">
+              <i class="fas fa-user"></i> Developer Expert
+              <i class="fas fa-calendar ms-3"></i> 18 Mei 2025
+              <i class="fas fa-eye ms-3"></i> 892 views
+            </div>
+            <p>React, Vue, Angular, atau framework lainnya? Temukan framework JavaScript mana yang paling cocok untuk proyek Anda...</p>
+            <a href="artikel-js-framework.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+          <img src="assets/images/cybersecurity.jpg" alt="Cybersecurity" />
+          <div class="card-body">
+            <span class="category">Cybersecurity</span>
+            <h5><a href="artikel-cybersecurity.html">Tips Keamanan Cyber untuk Developer</a></h5>
+            <div class="blog-meta">
+              <i class="fas fa-user"></i> Security Specialist
+              <i class="fas fa-calendar ms-3"></i> 15 Mei 2025
+              <i class="fas fa-eye ms-3"></i> 1,567 views
+            </div>
+            <p>Keamanan cyber menjadi semakin penting dalam era digital. Pelajari best practices untuk melindungi aplikasi Anda...</p>
+            <a href="artikel-cybersecurity.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="blog-card">
+          <img src="assets/images/flutter-vs-react-native.png" alt="Flutter vs React Native" />
+          <div class="card-body">
+            <span class="category">Mobile Development</span>
+            <h5><a href="artikel-flutter-react.html">Flutter vs React Native: Mana yang Lebih Baik?</a></h5>
+            <div class="blog-meta">
+              <i class="fas fa-user"></i> Mobile Developer
+              <i class="fas fa-calendar ms-3"></i> 12 Mei 2025
+              <i class="fas fa-eye ms-3"></i> 2,103 views
+            </div>
+            <p>Perbandingan mendalam antara Flutter dan React Native. Pelajari kelebihan, kekurangan, dan kapan harus memilih salah satunya...</p>
+            <a href="artikel-flutter-react.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Blog pagination">
+          <ul class="pagination">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sidebar">
+          <h5><i class="fas fa-search"></i> Pencarian</h5>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Cari artikel..." />
+            <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <h5><i class="fas fa-clock"></i> Artikel Terbaru</h5>
+          <div class="recent-post">
+            <img src="assets/images/blockchain-cryptocurency.jpg" alt="Blockchain" />
+            <div>
+              <h6><a href="#">Mengenal Teknologi Blockchain dan Cryptocurrency</a></h6>
+              <small class="text-muted">22 Mei 2025</small>
+            </div>
+          </div>
+          <div class="recent-post">
+            <img src="assets/images/cloud-computing.jpg" alt="Cloud Computing" />
+            <div>
+              <h6><a href="#">Cloud Computing: AWS vs Azure vs Google Cloud</a></h6>
+              <small class="text-muted">21 Mei 2025</small>
+            </div>
+          </div>
+          <div class="recent-post">
+            <img src="assets/images/docker.jpg" alt="Docker" />
+            <div>
+              <h6><a href="#">Tutorial Docker untuk Pemula</a></h6>
+              <small class="text-muted">19 Mei 2025</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <h5><i class="fas fa-folder"></i> Kategori</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-decoration-none">Web Development <span class="badge bg-secondary">12</span></a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none">Mobile Development <span class="badge bg-secondary">8</span></a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none">Artificial Intelligence <span class="badge bg-secondary">15</span></a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none">Cybersecurity <span class="badge bg-secondary">6</span></a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none">Cloud Computing <span class="badge bg-secondary">9</span></a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar">
+          <h5><i class="fas fa-tags"></i> Tags</h5>
+          <div class="tag-cloud">
+            <a href="#" class="tag">JavaScript</a>
+            <a href="#" class="tag">Python</a>
+            <a href="#" class="tag">React</a>
+            <a href="#" class="tag">AI</a>
+            <a href="#" class="tag">Machine Learning</a>
+            <a href="#" class="tag">Blockchain</a>
+            <a href="#" class="tag">DevOps</a>
+            <a href="#" class="tag">Docker</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <h5>TechBlog</h5>
+        <p>Platform terdepan untuk informasi teknologi dan inovasi terbaru</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <hr class="my-4" />
+        <p>&copy; 2025 TechBlog. All rights reserved. Made with <i class="fas fa-heart text-danger"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

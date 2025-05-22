@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - TechBlog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-code"></i> TechBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="beranda.html"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html"><i class="fas fa-user"></i> Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p class="lead">Punya pertanyaan, masukan, atau ingin berkolaborasi? Kami siap mendengarkan!</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="bg-light p-5 rounded shadow-sm">
+                        <div class="mb-4 text-center">
+                            <h3>Formulir Kontak</h3>
+                            <p>Isi formulir di bawah ini untuk mengirim pesan kepada tim kami.</p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap *</label>
+                            <input type="text" class="form-control" id="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subjek" class="form-label">Subjek</label>
+                            <input type="text" class="form-control" id="subjek">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan *</label>
+                            <textarea class="form-control" id="pesan" rows="5" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h5>TechBlog</h5>
+                <p>Platform terdepan untuk informasi teknologi dan inovasi terbaru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <hr class="my-4">
+                <p>&copy; 2025 TechBlog. All rights reserved. Made with <i class="fas fa-heart text-danger"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form submission handler (dummy for frontend only)
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Pesan Anda telah berhasil dikirim. Terima kasih!");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
